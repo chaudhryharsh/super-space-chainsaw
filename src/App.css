@@ -1,31 +1,67 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    align-items:center;
+    justify-content: center;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    
 }
 
-.App-link {
-  color: #61dafb;
+header > div{
+    margin: 0;
 }
 
-.heart {
-  color: #ff0000;
+header > div > Link{
+    position: relative;
+    right: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
 }
 
-.small {
-  font-size: 0.75rem;
+header > div > Link:visited{
+    text-decoration: none;
 }
+
+.header-logo{
+    width: 5rem;
+}
+
+.header-ele{
+    margin-left: 1rem;
+}
+
+.character-div{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.character-div-child {
+    width:23%;
+    min-width: 250px;
+    margin:1%;
+    background-color: antiquewhite;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-div-child > h3{
+    text-decoration: none;
+}
+
+
