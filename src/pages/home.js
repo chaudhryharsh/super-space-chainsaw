@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
-import { useContext } from "react";
+
 import { Link } from "react-router-dom";
-import { shareData, useAPI } from "../context/dataFromApi";
+import {  useAPI } from "../context/dataFromApi";
 
 export default function Home(){
 

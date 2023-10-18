@@ -1,14 +1,14 @@
 import React from "react";
 import { useState, useEffect, useContext } from "react";
 
-export const shareData = React.createContext();
+const shareData = React.createContext();
 
 export function DataFromApi( {children} ){
     const [characters, setCharacters] = useState([]);
     
-    let data;
+    // let data;
     useEffect(function(){
-        data = fetch('https://swapi.dev/api/people/',{
+        fetch('https://swapi.dev/api/people/',{
             headers :{
                 'Content-Type':'Application/json',
             },
