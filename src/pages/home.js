@@ -31,7 +31,6 @@ export default function Home(){
             </Link>
     })
 
-    console.log(characters);
 
 
     return (

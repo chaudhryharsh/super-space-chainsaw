@@ -7,7 +7,9 @@ export default function Main(){
         <div>
         <header className="header">
             <div className="logo-div">
-                <img src={url} className="header-logo" alt='header-logo'/>
+                <Link className='header-ele' to='/'>
+                    <img src={url} className="header-logo" alt='header-logo'/>
+                </Link>
             </div>
             <div>
                 <Link className='header-ele' to='/'>Home</Link>

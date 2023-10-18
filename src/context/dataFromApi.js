@@ -14,8 +14,6 @@ export function DataFromApi( {children} ){
             },
         }).then(res => res.json()).then(data => setCharacters(data.results));
     },[]);
-    console.log("working")
-    console.log(characters)
     return (
         <shareData.Provider value={characters}>
             {children}
