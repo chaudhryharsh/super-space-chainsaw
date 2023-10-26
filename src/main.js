@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 
-const url = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1024px-Star_Wars_Logo.svg.png";
+const url = "https://seeklogo.com/images/G/game-of-thrones-logo-D19BAAF437-seeklogo.com.png";
 
 export default function Main(){
     return (

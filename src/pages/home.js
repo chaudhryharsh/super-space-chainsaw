@@ -1,6 +1,8 @@
 
 import { Link } from "react-router-dom";
 import {  useAPI } from "../context/dataFromApi";
+import banner from "../game-of-thrones.jpg";
+
 
 export default function Home(){
 
@@ -20,22 +22,21 @@ export default function Home(){
 
     
     const printCharacters = characters.map(character =>{
-        const url = character.url;
-        const urlArr = url.split('/');
+        const id = character.id;
 
-        return <Link className="character-div-child" to={`character/${urlArr[5]}`} key={`character/${urlArr[5]}`}>
-            <h3>{character.name}</h3>
-            <h3>{character.height}</h3>
-            <h3>{character.mass}</h3>
-            <h3>{character.hair_color}</h3>
+        return <Link className="character-div-child" to={`character/${id}`} key={`character/${id}`}>
+            <img src={character.imageUrl}></img>
+            <h3>{character.fullName}</h3>
+            <h4>{character.family}</h4>
             </Link>
     })
 
 
 
-    return (
-        <div className="character-div"> 
+    return <>
+    <img id="banner-img" src={banner}></img>
+    <div className="character-div"> 
             {printCharacters}
         </div>
-    );
+    </>;
 }

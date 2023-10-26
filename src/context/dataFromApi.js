@@ -8,12 +8,13 @@ export function DataFromApi( {children} ){
     
     // let data;
     useEffect(function(){
-        fetch('https://swapi.dev/api/people/',{
-            headers :{
-                'Content-Type':'Application/json',
-            },
-        }).then(res => res.json()).then(data => setCharacters(data.results));
+        fetch('https://thronesapi.com/api/v2/Characters',{
+            mode: 'cors',
+            'Access-Control-Allow-Origin':'*',
+        }).then(res => res.json()).then(data => setCharacters(data));
     },[]);
+
+    console.log(characters);
     return (
         <shareData.Provider value={characters}>
             {children}
